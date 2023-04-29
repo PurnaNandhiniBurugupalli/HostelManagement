@@ -1,0 +1,226 @@
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    /* color:rgb(252, 2, 252); */
+    position: sticky;
+    background:rgb(69, 69, 248);
+    /* hsl(16, 93%, 78%) */
+}
+.nav img{
+    width:110px;
+    padding: 5px 40px;
+    padding-left: 20px;
+}
+.nav h2{
+    padding-left: 80px;
+    /* color:blueviolet; */
+}
+.nav :last-child{
+    text-align: center;
+}
+.contact_text{
+padding-left: 90%;
+}
+
+.contact_text:hover{
+    color:blue;
+}
+.contact_page img{
+    width:150px;
+    border-radius: 50%;
+   
+}
+.contact_page{
+    padding-left: 40%;
+
+}
+
+
+.login{
+    display: flex;
+    justify-content: center;
+  padding: 50px;
+background-repeat: no-repeat;
+background-image: url("\WhatsApp Image 2022-11-27 at 12.24.41 AM.jpeg");
+margin-bottom: 1000px;
+background-size: 100% 500px;
+background-position: center;
+margin: 5px;
+}
+.warden_login{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5px;
+    background: white;
+    
+}
+.login div{
+    margin: 5px;
+}
+.login h3{
+    background-color:rgb(70, 70, 252);
+    padding-top: 60px;
+    border-radius: 10% 10% 0 0;
+    margin-top: 0;
+}
+.button1{
+    background-color:gainsboro;
+    margin-top: 10px;
+    border: none;
+    padding: 3px;
+    border-radius: 15%;
+     margin-left: 70%;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+.floor .room1,
+.floor .room5,
+.floor .room3,
+.floor .room12,
+.floor .room9,
+.floor .room7{
+    border:2px solid rgb(236, 56, 56);
+}
+.floor .room7,
+.floor .room10,
+.floor .room6,
+.floor .room4,
+.floor .room8{
+    border:2px solid green;
+}
+.floor .room2,
+.floor .room11{
+    border:2px solid rgb(255, 191, 0);
+   
+}
+/* .floor .room1:hover,
+.floor .room5:hover,
+.floor .room3:hover,
+.floor .room12:hover,
+.floor .room10:hover,
+.floor .room9:hover,
+.floor .room7:hover{
+    background-color: rgb(250, 125, 125);
+    transition: 0.3 ease;
+ 
+} */
+.floor .room1 a,
+.floor .room5 a,
+.floor .room3 a,
+.floor .room12 a,
+.floor .room10 a,
+.floor .room9 a,
+.floor .room4 a:nth-child(3),
+.floor .room6 a:nth-child(4)
+{
+   
+    background-color: rgb(236, 56, 56);
+    color:aliceblue;
+}
+.floor .room10 a,
+.floor .room7 a,
+.floor .room6 a:nth-child(2),
+.floor .room8 a:nth-child(3),
+.floor .room8 a:nth-child(4),
+.floor .room4 a:nth-child(4){
+    background-color: green;
+    border: none;
+    color:aliceblue;
+}
+.floor .room2 a,
+.floor .room11 a,
+.floor .room4 a:nth-child(2),
+.floor .room6 a:nth-child(3),
+.floor .room8 a:nth-child(2)
+{
+    border: 2px solid rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+    color:aliceblue;
+}
+.color_list li{
+    list-style: square;
+    font-size: 30px;
+    margin: 0px;
+}
+.color_list li p{
+    margin:5px;
+}
+.color_list li:nth-child(1){
+    color: green;
+}
+.color_list li:nth-child(2){
+    color:rgb(236, 56, 56) ;
+}
+.color_list li:nth-child(3){
+    color:  rgb(255, 191, 0);
+}
+.color_list li p{
+    font-size: 20px;
+}
+/* opacity: 0.2; */
+/* backdrop-filter: blur(10px);
+.login .warden_login .button1{
+*/
+.head p{
+   
+    font-size: 20px;
+}
+.head p .span1{
+    color:blue
+}
+.roomimg{
+  margin-left:30% ;
+border-radius: 10px;
+ border: 5px solid sandybrown ;
+}
+.head h3{
+    color:orangered;
+}
+.head{
+    padding: 30px;
+    padding-top: 10px;
+}
+.head u{
+    font-size: 30px; 
+    color:crimson;
+}
+.head ul li{
+    /* font-weight: 600; */
+    font-size: 20px;
+}
+.floor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.floor div{
+    border:1px solid chocolate;
+    border-radius: 5%;
+    padding: 5px;
+    margin: 2px;
+}
+.floor div a{
+    border:1px  solid chocolate;
+    border-radius: 5%;
+    padding: 3px;
+    margin: 5px;
+}
+.floors{
+    padding:10px;
+    margin-bottom: 100px;
+}
+.floors b{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+/* ---resposive-- */
+@media (max-width:900px){
+    .login{
+        display:flex;
+        flex-direction:column;
+    }
+}

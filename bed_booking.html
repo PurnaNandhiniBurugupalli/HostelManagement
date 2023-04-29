@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+           h1{
+            text-align: center;
+            font-size: 100px;
+            font-style: bold;
+            color:blueviolet;
+            margin-top: 0;
+           }
+           .hn{
+              position: relative;
+              left: 440px;
+             border-bottom: 0;
+             margin-bottom: 0;
+              font-size: 30px;
+              border-left: 0;
+           }
+           .rn{
+            position: relative;
+              left: 440px;
+           margin-top: 0;
+              font-size: 30px;
+
+           }
+           .label1{
+            position: relative;
+              left: 400px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+
+           }
+           .input1{
+            position: relative;
+              left: 535px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label2{
+            position: relative;
+              left: 400px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input2{
+            position: relative;
+              left: 550px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label3{
+            position: relative;
+              left: 400px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input3{
+            position: relative;
+              left: 540px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label4{
+            position: relative;
+              left: 400px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input4{
+            position: relative;
+              left: 430px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label5{
+            position: relative;
+              left: 400px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input5{
+            position: relative;
+              left: 442px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label6{
+            position: relative;
+              left: 402px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input6{
+            position: relative;
+              left: 430px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           .label7{
+            position: relative;
+              left: 402px;
+              bottom: 50px;
+              font-size: 30px;
+              font-weight: 300;
+           }
+           .input7{
+            position: relative;
+              left: 620px;
+              bottom: 50px;
+              font-size: 20px;
+              font-weight: 300;
+           }
+           #submit{
+            position: relative;
+            left: 900px;
+      padding: 10px;
+      border-radius:15px;
+      background-color: blue;
+      font-size: 20px;
+      border: none;
+      width: 130px;
+      color: white;
+      margin-bottom: 70px;
+
+     }
+     hr{
+        width: 620px;
+        position: relative;
+        left: 10px;
+        bottom: 80px;
+        margin-top: 50px;
+     }
+     h3{
+        font-size: 40px;
+        font-weight: 800;
+        position: relative;
+        left: 440px;
+        bottom: 20px;
+        color: blue;
+     }
+     .note{
+        font-size: 20px;
+        color: red;
+        position: relative;
+        left: 20px;
+        bottom: 10px;
+       
+     }
+     .note2{
+        font-size: 20px;
+        color: red;
+        position: relative;
+        left: 100px;
+        bottom: 10px;
+       
+     }
+     p{
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 100px;
+     }
+     
+    </style>
+    <script>
+        function fn(){
+            let a=document.getElementById('sname')
+            let b=document.getElementById('fname')
+            let c=document.getElementById('mname')
+            let d=document.getElementById('Sph')
+            let e=document.getElementById('Fph')
+            let f=document.getElementById('Mph')
+            let  br=document.getElementById('branch')
+            
+            if(a.value=="")
+              {
+                alert("Fill all the details ")
+                return false
+              }
+            if(b.value=="")
+            {
+                alert("Fill all the details" )
+                return false
+            }
+            if(c.value=="")
+            {
+                alert("Fill all the details")
+                return false
+            }
+            if(d.value=="")
+            {
+                alert("Fill all the details")
+                return false
+            }
+            if(d.value.length>10){
+                alert("enter 10 digits mobile number")
+                return false
+            }
+            if(e.value=="")
+            {
+                alert("Fill all the details ")
+                return false
+            }
+            if(e.value.length>10){
+                alert("enter 10 digits mobile number")
+                return false
+            }
+            if(f.value=="")
+            {
+                alert("Fill all the details")
+                return false
+            } 
+            if(f.value.length>10){
+                alert("enter 10 digits mobile number")
+                return false
+            }
+            if(br.value==""||br.value.length>5)
+            {
+                alert("enter valid branch name")
+                return false
+            }
+        }
+        </Script>
+
+
+</head>
+<body>
+       
+         <h1>Student Details</h1>
+         <h4 class="hn">Hostel Name:</h4>
+         <h4 class="rn">Room no:</h4>
+       <p >&bull;  Enter Your  details to book the bed
+          </p>
+         
+   
+         <form action="finalSubmit.html" onsubmit="return fn()">
+                 <label for="" class="label1">Student Name</label>
+                 <input type="text" name="" id="sname" class="input1" size="25" placeholder="enter student name"><br><br>
+                 <label for=""class="label2">Father Name</label>
+                 <input type="text" name="" id="fname" class="input2" size="25" placeholder="enter father name"><br><br>
+                 <label for="" class="label3">Mother Name</label>
+                 <input type="text" name="" id="mname" class="input3" size="25" placeholder="enter mother name"><br><br>
+                 <label for="" class="label4">Student phone Number</label>
+                 <input type="text" class="input4"size="25" id="Sph" placeholder="enter student mobile number "><br><br>
+                 <label for="" class="label5">Father Phone Number</label>
+                 <input type="text" class="input5"size="25" id="Fph" placeholder="enter father mobile number "><br><br>
+                 <label for="" class="label6">Mother Phone Number</label>
+                 <input type="text" class="input6"size="25"id="Mph" placeholder="enter mother mobile number "><br><br>
+                 <label for="" class="label7">Branch</label>
+                 <input type="text" class="input7"size="25" id="branch" placeholder="enter branch">
+                 <h3>Note: <span class="note">check the details you have given once if you click the submit <br><span class="note2"> button it won't redirect to modify the details</span></span></h3>
+                 <input type="submit" name="" id="submit" value="submit">        
+        </form>
+
+</body>
+</html>
